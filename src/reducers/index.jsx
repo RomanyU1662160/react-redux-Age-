@@ -21,7 +21,7 @@ const myReducer = (state = initialState, action) => {
     case "DELETE_ITEM":
       return Object.assign({}, state, {
         history: state.history.filter(el => {
-          return el.id !=== action.key;
+          return el.id !== action.key;
         })
       });
       break;
