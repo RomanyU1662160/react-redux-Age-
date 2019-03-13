@@ -28,7 +28,7 @@ const myReducer = (state = initialState, action) => {
       return Object.assign({}, state, {
         history: state.history.filter(el => {
           return el.id !== action.key;
-          console.log(el.id + " : " + action.key);
+       
         })
       });
       break;
