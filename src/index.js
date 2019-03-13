@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import MyReducer from "./reducers";
 import "./styles.css";
 import AgeLabel from "./components/AgeLabel.jsx";
-import { connect } from "react-redux";
+
 
 const store = createStore(MyReducer);
 
