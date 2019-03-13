@@ -14,6 +14,7 @@ const myReducer = (state = initialState, action) => {
           Age: state.Age + action.payload.value
         })
       });
+
       break;
     case "AGE_DOWN":
       return Object.assign({}, state, {
@@ -28,7 +29,6 @@ const myReducer = (state = initialState, action) => {
       return Object.assign({}, state, {
         history: state.history.filter(el => {
           return el.id !== action.key;
-       
         })
       });
       break;
