@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 class AgeLabel extends Component {
   state = {
-    Age: 20
+
   };
   render() {
     return (
@@ -23,19 +23,17 @@ class AgeLabel extends Component {
             Increase
           </button>
         </div>
+
       </div>
     );
   }
 }
 
-const mapStateToProps = state => {
-  return { Age: state.Age };
-};
+
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAgeUp: () => dispatch({ type: "AGE_UP" }),
-    onAgeDown: () => dispatch({ type: "AGE_DOWN" })
+
   };
 };
 export default connect(

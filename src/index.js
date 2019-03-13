@@ -6,6 +6,7 @@ import MyReducer from "./reducers";
 import "./styles.css";
 import AgeLabel from "./components/AgeLabel.jsx";
 
+
 const store = createStore(MyReducer);
 
 function App() {
